@@ -1,0 +1,19 @@
+{
+  "name": "eslint-plugin-react-intl",
+  "version": "1.0.0",
+  "description": "React-intl specific linting rules for ESLint",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.js --reporter dot"
+  },
+  "author": "Rami Valta rami.valta@soikea.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^6.0.0-beta.6",
+    "coveralls": "^2.11.8",
+    "eslint": "^2.4.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {}
+}
