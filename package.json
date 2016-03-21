@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-intl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React-intl specific linting rules for ESLint",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,6 @@
   },
   "dependencies": {},
   "publishConfig": {
-      "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   }
 }
