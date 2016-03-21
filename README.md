@@ -56,7 +56,7 @@ With ESLint 2.x.x:
 
 # List of supported rules
 
-* [string-is-marked-for-translation](docs/rules/display-name.md): Catch strings that aren't marked for translation, e.g. contained in a <FormattedSomething /> component from react-intl 2.0.
+* string-is-marked-for-translation: Catch strings that aren't marked for translation, e.g. contained in a <FormattedSomething /> component from react-intl 2.0.
 
 # Thanks
 * [Eslint-plugin-React](https://github.com/yannickcr/eslint-plugin-react) by [Yannick Croissant](https://github.com/yannickcr), where many parts of this plugin were lifted from.
