@@ -132,6 +132,23 @@ ruleTester.run('string-is-marked-for-translation', rule, {
       args: [1],
       parser: 'babel-eslint',
       errors: [{message: 'Found string literal inside JSX, should be inside a <Formatted* /> component'}]
-    }
+    },
+    {
+      code: [
+        'class Comp1 extends Component {',
+        '  render() {',
+        '    return (',
+        '      <div>',
+        '        <FormattedMessage id="erodfasf" defaultMessage="houheirh"/>',
+        '        <h4>FALSELS</h4>',
+        '      </div>',
+        '    );',
+        '  }',
+        '}'
+      ].join('\n'),
+      args: [1],
+      parser: 'babel-eslint',
+      errors: [{message: 'Found string literal inside JSX, should be inside a <Formatted* /> component'}]
+    },
   ]
 });
