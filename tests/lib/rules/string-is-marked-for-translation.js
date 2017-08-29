@@ -35,6 +35,17 @@ ruleTester.run('string-is-marked-for-translation', rule, {
       ].join('\n'),
       args: [1],
       parser: 'babel-eslint'
+    },
+    {
+      code: [
+        'class Comp1 extends Component {',
+        '  render() {',
+        '    return (<div>+()</div>);', // Non-letter characters should be allowed
+        '  }',
+        '}'
+      ].join('\n'),
+      args: [1],
+      parser: 'babel-eslint'
     }
   ],
 
@@ -44,6 +55,18 @@ ruleTester.run('string-is-marked-for-translation', rule, {
         'class Comp1 extends Component {',
         '  render() {',
         '    return (<div>test</div>);',
+        '  }',
+        '}'
+      ].join('\n'),
+      args: [1],
+      parser: 'babel-eslint',
+      errors: [{message: 'Found string literal inside JSX, should be inside a <Formatted* /> component'}]
+    },
+    {
+      code: [
+        'class Comp1 extends Component {',
+        '  render() {',
+        '    return (<div>æøå</div>);',
         '  }',
         '}'
       ].join('\n'),
