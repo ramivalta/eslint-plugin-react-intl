@@ -1,5 +1,5 @@
 /**
- * @fileoverview Catch strings that aren't marked for translation 
+ * @fileoverview Catch strings that aren't marked for translation
  * @author Rami Valta
  */
 'use strict';
@@ -24,10 +24,10 @@ ruleTester.run('string-is-marked-for-translation', rule, {
         '  render() {',
         '    return (',
         '      <div>',
-		'		<FormattedMessage id=\'asdjl\'',
-		'			description=\'asdjfl\'',
-		'			defaultMessage=\'asdasdasd\'',
-		'		/>',
+        '        <FormattedMessage id=\'asdjl\'',
+        '            description=\'asdjfl\'',
+        '            defaultMessage=\'asdasdasd\'',
+        '        />',
         '      </div>',
         '    );',
         '  }',
@@ -51,7 +51,7 @@ ruleTester.run('string-is-marked-for-translation', rule, {
       parser: 'babel-eslint',
       errors: [{message: 'Found string literal inside JSX, should be inside a <Formatted* /> component'}]
     },
-	{
+    {
       code: [
         'class Comp1 extends Component {',
         '  render() {',
@@ -64,7 +64,7 @@ ruleTester.run('string-is-marked-for-translation', rule, {
       errors: [{message: 'Found string literal inside JSX, should be inside a <Formatted* /> component'}]
     },
 
-	 {
+     {
       code: [
         'class Comp1 extends Component {',
         '  render() {',
